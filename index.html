@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="head">
+        <h1 id="title">Subscribe to the blog</h1>
+        <p id="description">Be the first one to read the new posts</p>
+    </header>
+
+    <section class="container">
+        <!-- FORM -->
+        <form action="" id="survey-form">
+            <div class="name-wrapper">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Obi-Wan">
+            </div>
+
+            <div class="email-wrapper">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="ifailedyou@deathstar.com">
+            </div>
+
+            <div class="gender-wrapper">
+                <label for="gender" id="gender-label">Gender:</label>
+                <input type="radio" name="gender" value="1" id="gender-male">Male
+                <input type="radio" name="gender" value="2" id="gender-female">Female
+            </div>
+
+            <div class="age-wrapper">
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" placeholder="23" min="1" max="100">
+            </div>
+
+            <div class="interest-wrapper">
+                <label for="interests">Interests:</label>
+                <ul id="interests">
+                    <li>
+                        <input type="checkbox" name="interests" value="Front End">Front End</li>
+                    <li>
+                        <input type="checkbox" name="interests" value="Back End">Back End</li>
+                    <li>
+                        <input type="checkbox" name="interests" value="Design">Design</li>
+                </ul>
+            </div>
+
+            <div class="profession-wrapper">
+                <label id="profession-label" for="dropdown">Profession:</label>
+                <select id="dropdown">
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Web Designer">Web Designer</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Game Developer">Game Developer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="full-width">
+                <label for="comment">Comments:</label>
+                <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
+            </div>
+
+            <button class="full-width " id="submit" type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
