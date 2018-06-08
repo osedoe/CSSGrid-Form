@@ -8,6 +8,7 @@
     <title>Form</title>
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -22,12 +23,12 @@
         <form action="" id="survey-form">
             <div class="name-wrapper">
                 <label id="name-label" for="name">Name:</label>
-                <input id="name" type="text" placeholder="Obi-Wan">
+                <input id="name" type="text" placeholder="Enter your name" required>
             </div>
 
             <div class="email-wrapper">
                 <label id="email-label" for="email">Email:</label>
-                <input id="email" type="email" placeholder="ifailedyou@deathstar.com">
+                <input id="email" type="email" placeholder="Enter a valid email address" required>
             </div>
 
             <div class="gender-wrapper">
@@ -64,18 +65,18 @@
                 </select>
             </div>
 
-            <div class="full-width">
+            <div class="full-width comment-wrapper">
                 <label for="comment">Comments:</label>
-                <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
+                <textarea class="" name="comment" id="comment" cols="30" rows="6"></textarea>
             </div>
 
-            <button class="full-width " id="submit" type="submit">Submit</button>
+            <button class="full-width" id="submit" type="submit">Submit</button>
 
         </form>
 
     </section>
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>
